@@ -3,7 +3,8 @@ def uppercase(c):
     for i in c:
         asc = ord(i) - 32
         if asc >= 65 and asc <= 90:
-            print(f"{chr(asc)}", end="")
+            pass
         else:
-            print(f"{i}", end="")
+            asc = asc + 32
+        print("{:c}".format(asc), end="")
     print("\n", end="")
