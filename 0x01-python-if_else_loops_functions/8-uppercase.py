@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def uppercase(c):
     for i in c:
         asc = ord(i) - 32
