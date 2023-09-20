@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def square_matrix_simple(matrix=[]):
     lst1 = []
     matrix_lst = []
