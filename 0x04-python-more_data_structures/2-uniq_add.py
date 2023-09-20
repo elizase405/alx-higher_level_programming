@@ -4,6 +4,6 @@ def uniq_add(my_list=[]):
     total = 0
 
     for x in uniq_lst:
-        total+=x
+        total += x
 
     return total
