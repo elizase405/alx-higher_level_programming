@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class Square:
 
     def __init__(self, size=0, position=(0, 0)):
@@ -23,7 +24,7 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    position.setter
+    @position.setter
     def position(self, value):
         if (not all(num < 0 for num in value)
                 or not all(isinstance(num, int) for num in value)
@@ -38,4 +39,3 @@ class Square:
         for i in range(self.__size):
             [print("#", end="") for j in range(self.__size)]
             print()
-
