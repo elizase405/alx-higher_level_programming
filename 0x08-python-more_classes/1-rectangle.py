@@ -3,14 +3,26 @@
 
 
 class Rectangle:
+    """Represent a Rectangle claiss"""
+
+
     def __init__(self, width=0, height=0):
+        """mwthod to initializes the object created from this class"""
+
+
         self.__width = width
         self.__height = height
 
     def width(self):
+        """Returns object width"""
+        
+
         return self.__width
 
     def width(self, value):
+        """Sets object width"""
+        
+
         if type(value) != int:
             print("width must be an integer")
             raise TypeError
@@ -20,9 +32,15 @@ class Rectangle:
         self.__width = value
 
     def height(self):
+        """Gets object height"""
+        
+
         return self.__height
 
     def height(self, value):
+        """Sets object height"""
+        
+
         if type(value) != int:
             print("height must be an integer")
             raise TypeError
