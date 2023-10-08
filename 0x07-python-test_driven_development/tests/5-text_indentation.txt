@@ -1,0 +1,37 @@
+These Tests test ``text_indentation(text)``
+===========================================
+
+How to use 4-text_indentation.py
+--------------------------------
+
+
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+>>> text_indentation("My name is: Elizabeth. You? Great")
+My name is:
+<BLANKLINE>
+Elizabeth.
+<BLANKLINE>
+You?
+<BLANKLINE>
+Great
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation(8)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(())
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation([])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(3.6776)
+Traceback (most recent call last):
+TypeError: text must be a string
