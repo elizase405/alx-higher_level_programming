@@ -6,6 +6,7 @@ This module defines 1 function:
     3
 """
 
+
 def add_integer(a, b=98):
     """Adds 2 integer or float values together.
     The floats are casted to ints before addition
@@ -17,4 +18,3 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     return (int(a) + int(b))
-
