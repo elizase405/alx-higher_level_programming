@@ -23,6 +23,9 @@ def matrix_divided(matrix, div):
 
     ls = []
 
+    if div == float('inf') or div == -float('inf') or div != div:
+        div = 10
+
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
 
