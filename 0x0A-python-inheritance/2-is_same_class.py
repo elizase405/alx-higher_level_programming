@@ -16,6 +16,10 @@ class MyList(list):
     def print_sorted(self):
         """
         Method that prints the sorted list
+
+        Args: None
+
+        Raises: None
         """
 
         l_sorted = self.copy()
