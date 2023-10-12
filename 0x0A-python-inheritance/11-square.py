@@ -5,6 +5,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 A module with 1 function
 """
 
+
 class Square(Rectangle):
     """ Class that defines a Square from Rectangle class """
     def __init__(self, size):

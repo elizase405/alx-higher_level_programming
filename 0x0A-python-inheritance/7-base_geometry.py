@@ -4,6 +4,7 @@
 A module with 1 function
 """
 
+
 class BaseGeometry:
     """ Class that defines the attributes of Geometric Shapes """
 
@@ -18,3 +19,10 @@ class BaseGeometry:
         Árgs:
             name: name of the object
             value: value of the property
+
+        """
+
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
