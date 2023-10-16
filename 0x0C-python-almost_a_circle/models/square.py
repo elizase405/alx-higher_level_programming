@@ -38,3 +38,20 @@ class Square(Rectangle):
         wh = "{}/{}".format(self.width, self.height)
 
         return cls + idd + xy + wh
+
+    def update(self, *args, **kwargs):
+        """
+        Using no-keyword argument styling
+        to assigns an argument to each attribute.
+
+        Args:
+            *args - a list on unknown arguments
+            **kwargs - a dictionary of unknown arguments
+        """
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        else:
+            attrs = ["id", "size", "x", "y"]
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
