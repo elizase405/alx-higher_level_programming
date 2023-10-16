@@ -38,6 +38,11 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
 
+    def update(self, *args):
+        attrs = ["id", "width", "height", "x", "y"]
+        for i in range(len(args)):
+            setattr(self, attrs[i], args[i])
+
     @property
     def width(self):
         """ gets width. """
