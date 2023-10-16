@@ -38,16 +38,22 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Using no-keyword argument styling
         to assigns an argument to each attribute.
 
-        Args: *args - a list on unknown arguments
+        Args:
+            *args - a list on unknown arguments
+            **kwargs - a dictionary of unknown arguments
         """
-        attrs = ["id", "width", "height", "x", "y"]
-        for i in range(len(args)):
-            setattr(self, attrs[i], args[i])
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        else:
+            attrs = ["id", "width", "height", "x", "y"]
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
 
     @property
     def width(self):
