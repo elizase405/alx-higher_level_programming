@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-from models.base import Base
-
 """
 This module defines 1 class that is
 a subclass of the Base class:
     r = Rectangle()
 """
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -104,4 +103,3 @@ class Rectangle(Base):
         wh = "{}/{}".format(self.width, self.height)
 
         return cls + idd + xy + wh
-
