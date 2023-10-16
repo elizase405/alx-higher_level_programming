@@ -39,6 +39,12 @@ class Rectangle(Base):
             print("#" * self.width)
 
     def update(self, *args):
+        """
+        Using no-keyword argument styling
+        to assigns an argument to each attribute.
+
+        Args: *args - a list on unknown arguments
+        """
         attrs = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
             setattr(self, attrs[i], args[i])
