@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-
 """
 
-
-Defining a rectangle class:
-    r = Rectangle()
+This module is composed by a class that defines a Rectangle
 
 
 """
