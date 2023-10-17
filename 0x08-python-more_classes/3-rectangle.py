@@ -3,41 +3,51 @@
 
 
 class Rectangle:
-    def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+    """Represent a Rectangle claiss"""
 
+    def __init__(self, width=0, height=0):
+        """ initializes instance """
+        self.width = width
+        self.height = height
+
+    @property
     def width(self):
+        """Returns object width"""
         return self.__width
 
+    @width.setter
     def width(self, value):
+        """Sets object width"""
         if type(value) != int:
-            print("width must be an integer")
-            raise TypeError
+            raise TypeError("width must be an integer")
         if value > 0:
-            print("width must be >= 0")
-            raise ValueError
+            raise ValueError("width must be >= 0")
         self.__width = value
 
+    @property
     def height(self):
+        """Gets object height"""
         return self.__height
 
+    @height.setter
     def height(self, value):
+        """Sets object height"""
         if type(value) != int:
-            print("height must be an integer")
-            raise TypeError
+            raise TypeError("height must be an integer")
         if value > 0:
-            print("height must be >= 0")
-            raise ValueError
+            rasie ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        return height * width
+        """Returns area of object"""
+        return self.height * self.width
 
     def perimeter(self):
-        return (2 * height) + (2 * width)
+        """Returns perimeter of object"""
+        return (2 * self.height) + (2 * self.width)
 
     def __str__(self):
+        """ output when str or print method is used"""
         for i in self.height:
             for j in self.width:
                 print("#", end="")
