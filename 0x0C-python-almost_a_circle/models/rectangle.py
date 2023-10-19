@@ -122,6 +122,7 @@ class Rectangle(Base):
         return cls + idd + xy + wh
 
     def to_dictionary(self):
+        """ returns dictionary representation of a Rectangle"""
         dictt = {
                 'x': self.x,
                 'y': self.y,
