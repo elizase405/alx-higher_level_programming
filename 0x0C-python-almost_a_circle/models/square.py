@@ -55,3 +55,12 @@ class Square(Rectangle):
             attrs = ["id", "size", "x", "y"]
             for i in range(len(args)):
                 setattr(self, attrs[i], args[i])
+
+    def to_dictionary(self):
+        dictt = {
+                'id': self.id,
+                'x': self.x,
+                'size': self.size,
+                'y': self.y,
+                }
+        return dictt

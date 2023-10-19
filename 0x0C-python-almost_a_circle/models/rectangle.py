@@ -120,3 +120,13 @@ class Rectangle(Base):
         wh = "{}/{}".format(self.width, self.height)
 
         return cls + idd + xy + wh
+
+    def to_dictionary(self):
+        dictt = {
+                'x': self.x,
+                'y': self.y,
+                'id': self.id,
+                'height': self.height,
+                'width': self.width
+                }
+        return dictt
