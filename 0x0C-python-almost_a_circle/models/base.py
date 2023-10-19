@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
 """
 This module defines 1 class:
     b = Base()
 """
+import json
 
 
 class Base:
@@ -25,3 +25,31 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """ returns a string representation of list_dictionaries"""
+        if list_dictionaries is None:
+            return "[]"
+        return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """ 
+        Writes the JSON string representation
+        of list_objs to a file
+        """
+
+        filename = "{}.json".format(cls.__name__)
+        list_dic = []
+        
+        if not list_objs:
+            pass
+        else:
+            for i in range(len(list_objs)):
+                list_dic.append(list_objs[i].to_dictionary())
+        
+        str_list_obj = cls.to_json_string(list_dic)
+        
+        with open(filename, "w") as f:
+            f.write(str_list_obj)
