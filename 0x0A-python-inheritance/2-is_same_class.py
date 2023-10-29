@@ -1,27 +1,13 @@
 #!/usr/bin/python3
-
-"""
-A module with 1 function
-"""
-
-
-class MyList(list):
-    """ Class that inherits the attributes references of class list
+def is_same_class(obj, a_class):
+    """ Function that returns True/False if obj is a type of a_class
 
     Args:
-        list: class list
+        obj: object
+        a_class: class type
 
+    Returns:
+        True if type of obj is a_class
+        False, otherwise
     """
-
-    def print_sorted(self):
-        """
-        Method that prints the sorted list
-
-        Args: None
-
-        Raises: None
-        """
-
-        l_sorted = self.copy()
-        l_sorted.sort()
-        print(l_sorted)
+    return type(obj) is a_class
