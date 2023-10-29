@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-Rectangle = __import__('9-rectangle').Rectangle
-
 """
 Module containing 1 class:
     square
 """
+
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
