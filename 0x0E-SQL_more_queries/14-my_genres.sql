@@ -4,7 +4,7 @@ SELECT tvg.name
 FROM tv_genres AS tvg
 INNER JOIN tv_show_genres AS tvsg
 ON tvsg.genre_id LIKE tvg.id
-INNER JOIN tv_shows as tvs
+INNER JOIN tv_shows AS tvs
 ON tvsg.show_id LIKE tvs.id
 WHERE tvs.title LIKE "Dexter"
 ORDER BY tvg.name;
