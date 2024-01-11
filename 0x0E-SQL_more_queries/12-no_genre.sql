@@ -1,4 +1,4 @@
--- a script that lists all shows contained in the database hbtn_0d_tvshows. If a show doesn’t have a genre, display NULL
+-- lists all shows contained in hbtn_0d_tvshows without a genre linked.
 
 SELECT tvs.title, tvsg.genre_id
 FROM tv_shows AS tvs
