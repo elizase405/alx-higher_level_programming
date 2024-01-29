@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 function nbOccurences (list, searchElement) {
   let count = 0;
 
