@@ -1,7 +1,7 @@
 function nbOccurences (list, searchElement) {
   let count = 0;
 
-  for (val of list) {
+  for (const val of list) {
     if (val === searchElement) {
       count++;
     }
