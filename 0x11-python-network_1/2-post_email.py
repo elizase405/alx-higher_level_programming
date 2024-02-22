@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Send data"""
+"""
+sends a POST request URL with email as parameter, and displays the res body
+"""
 import urllib.parse
 import urllib.request
 import sys
