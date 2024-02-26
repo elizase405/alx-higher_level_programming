@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# send a request
+"""
+send a request
+"""
 
 import urllib.request
 import sys
