@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-fetch a url and display data
-"""
+"""fetch a url and display data"""
 import requests
 
 
