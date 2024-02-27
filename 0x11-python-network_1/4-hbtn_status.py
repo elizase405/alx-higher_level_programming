@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""fetch a url and display data"""
+"""
+Python script that fetches https://alx-intranet.hbtn.io/status
+"""
 import requests
 
 
