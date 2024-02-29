@@ -11,5 +11,5 @@ if __name__ == "__main__":
     username = sys.argv[1]
     pwd = sys.argv[2]
 
-    res =  requests.get(url, auth=HTTPBasicAuth(username, pwd))
+    res = requests.get(url, auth=HTTPBasicAuth(username, pwd))
     print(res.json().get("id"))
