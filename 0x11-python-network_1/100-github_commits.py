@@ -14,5 +14,6 @@ if __name__ == "__main__":
     url = f"https://api.github.com/repos/{owner}/{repo}/commits"
 
     res = requests.get(url)
-    for i in res.json():
+    commits = res.json()
+    for i in commits[:10]:
         print("{}: {}".format(i.get('sha'), i.get('author').get('login')))
