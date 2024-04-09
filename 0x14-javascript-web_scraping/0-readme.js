@@ -1,4 +1,6 @@
 #!/usr/bin/node
+// a script that reads and prints the content of a file.
+// ./0-readme.js cisfun
 
 const fs = require('fs');
 const filePath = process.argv[2];
