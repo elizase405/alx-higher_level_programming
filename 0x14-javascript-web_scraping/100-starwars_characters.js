@@ -10,7 +10,7 @@ req(url, (err, res, data) => {
   if (err) console.log(err);
 
   data = JSON.parse(data);
-  data.characters.filter(link =>
+  data.characters.forEach(link =>
     req(link, (err, res, data) => {
       if (err) console.log(err);
 
